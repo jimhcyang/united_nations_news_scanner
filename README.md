@@ -65,9 +65,9 @@ INFO_LIMIT=9
 GUARDIAN_API_KEY=test
 
 # LLM
-OPENAI_API_KEY=sk-...
-MODEL=gpt-4.1-mini
-TEMPERATURE=0.45
+OPENAI_API_KEY=sk-[REDACTED]
+MODEL=gpt-5-nano
+TEMPERATURE=1
 EMAIL_MIN_ITEMS=1
 EMAIL_WORDS_MIN=80
 EMAIL_WORDS_MAX=320
@@ -85,9 +85,9 @@ export OPENAI_API_KEY=sk-...
 
 ```
 united-states
-china
-germany
+united-kingdom
 france
+taiwan
 ```
 
 ---
@@ -180,7 +180,7 @@ python country_llm_writer.py
 
 * HTML scraping (AJ/UN) can change; heuristics aim to be resilient but not perfect.
 * `FULLTEXT=1` is slower and may trigger site throttling; adjust limits if needed.
-* Emails use a structured prompt to: (a) prune irrelevant items; (b) cap bullets at `INFO_LIMIT`; and (c) generate up to four concise, theme-specific emails per country **only when** there are ≥3 strong items.
+* Emails use a structured prompt to: (a) prune irrelevant items; (b) cap bullets at `INFO_LIMIT`; and (c) generate up to four concise, theme-specific emails per country **only when** there is at least one strong item.
 
 ---
 
