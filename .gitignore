@@ -13,5 +13,4 @@ venv/
 .env
 
 # Run artifacts
-outputs/
 *_cache/

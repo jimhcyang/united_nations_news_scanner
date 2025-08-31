@@ -1,4 +1,4 @@
-# headline_auto_reader
+# News Scanner
 
 Country-focused news collection + drafting pipeline for UN/press signals.  
 It pulls recent items from **The Guardian** (API) and **Al Jazeera** (web), optionally **UN Press**, filters by cutoff date, then asks an LLM to produce:
