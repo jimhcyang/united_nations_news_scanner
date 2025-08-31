@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual envs
+.venv/
+venv/
+
+# macOS
+.DS_Store
+
+# Local env/config
+.env
+
+# Run artifacts
+outputs/
+*_cache/
